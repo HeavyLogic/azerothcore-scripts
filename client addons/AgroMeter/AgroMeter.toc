@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: AgroMeter
+## Notes: Shows your threat percent on current target's portrait
+## Author: HeavyLogic
+## Version: 1.0.0
+
+AgroMeter.lua
