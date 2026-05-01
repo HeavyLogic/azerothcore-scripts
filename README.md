@@ -23,3 +23,7 @@ Some scripts I made for [Azerothcore WoTLK Repack](https://www.ownedcore.com/for
 1. Open Command Prompt (`cmd`).
 2. Go to your server folder: `cd "D:\Games\Azerothcore WoTLK Repack"`
 3. Run a script: `py update_creature_respawn.py`
+
+## Notes
+
+- If you use `update_creature_respawn.py`, keep `configs/modules/mod-changeablespawnrates.conf` disabled (`Module.Enable = 0`) so module-based respawn scaling does not override or conflict with DB-based respawn values.
