@@ -1,7 +1,7 @@
 local frame = CreateFrame("Frame", "AgroMeterFrame")
 
 local text = TargetFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-text:SetPoint("BOTTOM", TargetFramePortrait, "TOP", 0, 4)
+text:SetPoint("BOTTOM", TargetFramePortrait, "TOP", 0, 2)
 text:SetDrawLayer("OVERLAY", 7)
 text:SetTextColor(1, 0.82, 0)
 text:Hide()
