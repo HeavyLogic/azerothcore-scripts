@@ -12,6 +12,8 @@ def load_db_config_from_authserver() -> dict:
     login_info = parser["authserver"].get("LoginDatabaseInfo")
     if not login_info:
         raise RuntimeError("LoginDatabaseInfo not found in [authserver]")
+    login_info = login_info.removeprefix('"').removesuffix('"')
+    login_info = login_info.removeprefix("'").removesuffix("'")
     parts = login_info.split(";")
     if len(parts) != 5:
         raise RuntimeError("Invalid LoginDatabaseInfo format in configs/authserver.conf")
