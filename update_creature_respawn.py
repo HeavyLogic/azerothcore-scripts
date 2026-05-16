@@ -25,7 +25,10 @@ def main() -> None:
         print("Invalid mob type. Expected 1 or 2.")
         return
 
-    raw = input("Enter multiplier (float, example: 1.5 or -1.5): ").strip()
+    print("Enter spawn time multiplier:")
+    print("  Positive number = speed UP spawn (e.g. 2.0 = twice as fast, spawntimesecs / 2)")
+    print("  Negative number = slow DOWN spawn (e.g. -2.0 = twice as slow, spawntimesecs * 2)")
+    raw = input("Multiplier: ").strip()
     try:
         factor = float(raw)
     except ValueError:
@@ -83,18 +86,10 @@ def main() -> None:
                 connection.rollback()
                 return
 
+            scale = abs(factor)
+
             if factor > 0:
-                sql = f"""
-                UPDATE creature c
-                JOIN creature_template ct ON ct.entry = c.{creature_entry_column}
-                SET c.spawntimesecs = GREATEST(1, CEIL(c.spawntimesecs * %s))
-                WHERE ct.rank <> 3
-                  AND {mob_filter}
-                """
-                cursor.execute(sql, (factor,))
-                mode_text = f"multiplied by {factor}"
-            else:
-                scale = abs(factor)
+                # Positive = speed UP: divide spawntimesecs by scale (shorter delay = faster spawn)
                 sql = f"""
                 UPDATE creature c
                 JOIN creature_template ct ON ct.entry = c.{creature_entry_column}
@@ -102,9 +97,19 @@ def main() -> None:
                 WHERE ct.rank <> 3
                   AND {mob_filter}
                 """
-                cursor.execute(sql, (scale,))
-                mode_text = f"divided by {scale} (because multiplier is negative)"
+                mode_text = f"divided by {scale} → spawn is {scale}x faster"
+            else:
+                # Negative = slow DOWN: multiply spawntimesecs by scale (longer delay = slower spawn)
+                sql = f"""
+                UPDATE creature c
+                JOIN creature_template ct ON ct.entry = c.{creature_entry_column}
+                SET c.spawntimesecs = GREATEST(1, CEIL(c.spawntimesecs * %s))
+                WHERE ct.rank <> 3
+                  AND {mob_filter}
+                """
+                mode_text = f"multiplied by {scale} → spawn is {scale}x slower"
 
+            cursor.execute(sql, (scale,))
             affected = cursor.rowcount
             connection.commit()
 
