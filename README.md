@@ -1,4 +1,4 @@
-Some scripts I made for [Azerothcore WoTLK Repack](https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-emulator-servers/wow-emu-general-releases/1040387-azerothcore-wotlk-repack-playerbots-individual-progression-32-other-modules.html#post4501356).
+Some scripts I made for [Azerothcore WoTLK Repack](https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-emulator-servers/wow-emu-general-releases/1040387-azerothcore-wotlk-repack-playerbots-individual-progression-32-other-modules.html#post4501356) (I use repack WITHOUT individual progression).
 
 ## Contents
 
