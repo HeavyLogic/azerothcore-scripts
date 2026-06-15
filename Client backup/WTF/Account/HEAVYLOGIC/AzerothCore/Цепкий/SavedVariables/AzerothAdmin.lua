@@ -1,0 +1,2 @@
+
+AzerothAdminDbPerChar = nil

@@ -1,0 +1,36 @@
+
+AUCTIONATOR_SAVEDVARS = {
+	["_200000"] = 1000,
+	["_50000"] = 500,
+	["STARTING_DISCOUNT"] = 5,
+	["_1000000"] = 2500,
+	["_5000000"] = 10000,
+	["_500"] = 5,
+	["_10000"] = 200,
+	["_2000"] = 100,
+}
+AUCTIONATOR_PRICING_HISTORY = {
+}
+AUCTIONATOR_SHOPPING_LISTS = {
+	{
+		["items"] = {
+		},
+		["isRecents"] = 1,
+		["name"] = "Последнии поиски",
+	}, -- [1]
+}
+AUCTIONATOR_PRICE_DATABASE = {
+	["__dbversion"] = 2,
+	["AzerothCore_Alliance"] = {
+	},
+}
+AUCTIONATOR_LAST_SCAN_TIME = nil
+AUCTIONATOR_TOONS = {
+	["Цепкий"] = {
+		["firstSeen"] = 1781297505,
+		["firstVersion"] = "2.6.3",
+	},
+}
+AUCTIONATOR_STACKING_PREFS = {
+}
+AUCTIONATOR_SCAN_MINLEVEL = 1

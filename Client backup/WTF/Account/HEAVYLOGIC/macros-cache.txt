@@ -1,0 +1,35 @@
+MACRO 6 "attack" Spell_Holy_Stoicism
+/script if GetRaidTargetIndex("target")==8 then SetRaidTarget("target",0) else SetRaidTarget("target",8) end
+END
+MACRO 4 "Buff bear" INV_Misc_QuestionMark
+#showtooltip Дубовая кожа
+/cast Инстинкты выживания
+/cast Дубовая кожа
+/cast Берсерк
+/cast Устрашающий рев
+END
+MACRO 5 "Buff cat" INV_Misc_QuestionMark
+#showtooltip Дубовая кожа
+/cast Инстинкты выживания
+/cast Дубовая кожа
+/cast Берсерк
+/cast Тигриное неистовство
+/cast [harm,nodead] Волшебный огонь (зверь)
+END
+MACRO 7 "Summon" Spell_unused2
+/группа summon
+END
+MACRO 3 "Знак дикой" INV_Misc_QuestionMark
+#showtooltip
+/cast [mod:shift] Дар дикой природы;  Знак дикой природы
+END
+MACRO 1 "Увечье" INV_Misc_QuestionMark
+#showtooltip Увечье (кошка)
+/startattack
+/cast Увечье (кошка)
+END
+MACRO 2 "Увечье медведь" INV_Misc_QuestionMark
+#showtooltip Увечье (медведь)
+/startattack
+/cast Увечье (медведь)
+END

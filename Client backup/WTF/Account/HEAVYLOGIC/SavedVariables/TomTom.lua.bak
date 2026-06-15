@@ -1,0 +1,19 @@
+
+TomTomDB = {
+	["profileKeys"] = {
+		["Цепкий - AzerothCore"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+TomTomWaypoints = {
+	["profileKeys"] = {
+		["Цепкий - AzerothCore"] = "Цепкий - AzerothCore",
+	},
+	["profiles"] = {
+		["Цепкий - AzerothCore"] = {
+		},
+	},
+}

@@ -1,0 +1,27 @@
+MACRO 4 "Buff bear" INV_Misc_QuestionMark
+#showtooltip Дубовая кожа
+/cast Инстинкты выживания
+/cast Дубовая кожа
+/cast Устрашающий рев
+END
+MACRO 5 "Buff cat" INV_Misc_QuestionMark
+#showtooltip Дубовая кожа
+/cast Инстинкты выживания
+/cast Дубовая кожа
+/cast Тигриное неистовство
+/cast [harm,nodead] Волшебный огонь (зверь)
+END
+MACRO 3 "Знак дикой" INV_Misc_QuestionMark
+#showtooltip
+/cast [mod:shift] Дар дикой природы;  Знак дикой природы
+END
+MACRO 1 "Увечье" INV_Misc_QuestionMark
+#showtooltip Увечье (кошка)
+/startattack
+/cast Увечье (кошка)
+END
+MACRO 2 "Увечье медведь" INV_Misc_QuestionMark
+#showtooltip Увечье (медведь)
+/startattack
+/cast Увечье (медведь)
+END

@@ -1,0 +1,14 @@
+
+RangeDisplayDB3 = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Цепкий - AzerothCore"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

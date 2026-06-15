@@ -1,0 +1,291 @@
+
+DominosDB = {
+	["profileKeys"] = {
+		["Цепкий - AzerothCore"] = "Друид",
+	},
+	["profiles"] = {
+		["Друид"] = {
+			["minimapPos"] = 239.0547398585663,
+			["linkedOpacity"] = 1,
+			["frames"] = {
+				{
+					["point"] = "BOTTOMLEFT",
+					["forms"] = {
+						["bonusbar:1"] = 1,
+						["bonusbar:1,stealth"] = 1,
+						["bonusbar:3"] = 1,
+					},
+					["y"] = 0,
+					["modifiers"] = {
+						["alt"] = 1,
+					},
+					["alpha"] = 0.9941176470588234,
+					["anchor"] = "2BC",
+					["padW"] = 0,
+					["x"] = 518.5185709993926,
+					["spacing"] = 0,
+					["padH"] = 0,
+					["targeting"] = {
+						["harm"] = 1,
+						["help"] = 1,
+						["combat"] = 1,
+					},
+					["pages"] = {
+						["DRUID"] = {
+							["[help]"] = 3,
+							["[bonusbar:1,noexists]"] = 5,
+							["[mod:SELFCAST]"] = 2,
+							["[bonusbar:1,harm]"] = 5,
+							["[bonusbar:1,stealth,harm]"] = 6,
+							["[bonusbar:1,stealth,noexists]"] = 6,
+							["[bonusbar:3,noexists]"] = 4,
+							["[bonusbar:3,harm]"] = 4,
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [1]
+				{
+					["point"] = "BOTTOMLEFT",
+					["forms"] = {
+						["bonusbar:1"] = 1,
+						["bonusbar:1,stealth"] = 1,
+						["bonusbar:4"] = 1,
+						["form:5"] = 1,
+						["bonusbar:3"] = 1,
+					},
+					["modifiers"] = {
+						["alt"] = 1,
+					},
+					["y"] = 53.85251539550632,
+					["padW"] = 0,
+					["x"] = 516.1484552929705,
+					["spacing"] = 0,
+					["padH"] = 0,
+					["targeting"] = {
+						["harm"] = 1,
+						["help"] = 1,
+						["combat"] = 1,
+					},
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [2]
+				{
+					["point"] = "BOTTOMLEFT",
+					["forms"] = {
+					},
+					["y"] = 272.7898835577312,
+					["modifiers"] = {
+						["shift"] = 1,
+						["ctrl"] = 1,
+					},
+					["padW"] = 2,
+					["x"] = 441.0864111751315,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["targeting"] = {
+					},
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [3]
+				{
+					["point"] = "BOTTOMLEFT",
+					["forms"] = {
+					},
+					["y"] = 171.1602569472716,
+					["anchor"] = "3BL",
+					["modifiers"] = {
+						["shift"] = 1,
+						["ctrl"] = 1,
+					},
+					["padW"] = 2,
+					["x"] = 439.5061122804949,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["targeting"] = {
+					},
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [4]
+				{
+					["point"] = "BOTTOMRIGHT",
+					["forms"] = {
+					},
+					["y"] = 271.0120516780485,
+					["modifiers"] = {
+						["shift"] = 1,
+						["ctrl"] = 1,
+					},
+					["padW"] = 2,
+					["x"] = -87.110873427461,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["targeting"] = {
+					},
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [5]
+				{
+					["point"] = "BOTTOMRIGHT",
+					["forms"] = {
+					},
+					["y"] = 247.6045592678353,
+					["anchor"] = "5BL",
+					["modifiers"] = {
+						["shift"] = 1,
+						["ctrl"] = 1,
+					},
+					["padW"] = 2,
+					["x"] = -83.95076583792047,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["targeting"] = {
+					},
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [6]
+				{
+					["point"] = "BOTTOMRIGHT",
+					["forms"] = {
+					},
+					["y"] = 207.6045762278707,
+					["modifiers"] = {
+						["shift"] = 1,
+						["ctrl"] = 1,
+					},
+					["anchor"] = "6BC",
+					["padW"] = 2,
+					["x"] = -83.95076583792047,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["targeting"] = {
+					},
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [7]
+				{
+					["point"] = "TOPRIGHT",
+					["padW"] = 2,
+					["x"] = -331.8520535080911,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = -385.5804301981364,
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [8]
+				{
+					["point"] = "BOTTOMRIGHT",
+					["anchor"] = "10BC",
+					["columns"] = 1,
+					["padW"] = 0,
+					["x"] = 0,
+					["spacing"] = 0,
+					["padH"] = 0,
+					["y"] = 74.1235217157866,
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+					["numButtons"] = 6,
+				}, -- [9]
+				{
+					["point"] = "TOPRIGHT",
+					["fadeAlpha"] = 0,
+					["y"] = -167.2098598533463,
+					["x"] = 0,
+					["columns"] = 1,
+					["spacing"] = 0,
+					["padH"] = 0,
+					["padW"] = 0,
+					["numButtons"] = 12,
+					["pages"] = {
+						["DRUID"] = {
+						},
+					},
+				}, -- [10]
+				["cast"] = {
+					["y"] = 184.7166079983937,
+					["x"] = 649.1483262462498,
+					["showText"] = true,
+					["point"] = "BOTTOMLEFT",
+				},
+				["roll"] = {
+					["point"] = "LEFT",
+					["spacing"] = 2,
+					["numButtons"] = 4,
+					["columns"] = 1,
+				},
+				["menu"] = {
+					["y"] = 1.800002475618069,
+					["x"] = -74.41988246832261,
+					["point"] = "BOTTOMRIGHT",
+					["spacing"] = -4,
+					["anchor"] = "bagsLB",
+				},
+				["xp"] = {
+					["alwaysShowXP"] = 1,
+					["point"] = "BOTTOMRIGHT",
+					["scale"] = 0.5600000000000001,
+					["width"] = 1,
+					["y"] = 3.000004034847128,
+					["x"] = -500.6997640389488,
+					["height"] = 20,
+					["anchor"] = "menuLB",
+					["alwaysShowText"] = 1,
+					["texture"] = "blizzard",
+				},
+				["vehicle"] = {
+					["y"] = -90.08652586053211,
+					["x"] = 55.49394044606671,
+					["point"] = "TOPLEFT",
+					["numButtons"] = 3,
+				},
+				["bags"] = {
+					["y"] = 1.551726432440828,
+					["x"] = -3.154949625853533,
+					["point"] = "BOTTOMRIGHT",
+					["spacing"] = 1,
+					["scale"] = 1.16,
+					["oneBag"] = 1,
+					["numButtons"] = 2,
+					["fadeAlpha"] = 0,
+				},
+				["pet"] = {
+					["y"] = -90.48155681635797,
+					["x"] = 55.43227594579381,
+					["point"] = "TOPLEFT",
+					["spacing"] = 0,
+				},
+				["class"] = {
+					["y"] = -141.4446117728223,
+					["x"] = 37.34559963333498,
+					["point"] = "TOPLEFT",
+					["spacing"] = 2,
+					["numButtons"] = 4,
+					["hidden"] = true,
+				},
+			},
+		},
+	},
+}
+DominosVersion = "1.18.6"

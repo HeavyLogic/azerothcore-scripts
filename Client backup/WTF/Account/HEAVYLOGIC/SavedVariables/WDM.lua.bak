@@ -1,0 +1,10 @@
+
+WDMdb = {
+	["profileKeys"] = {
+		["Цепкий - AzerothCore"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
