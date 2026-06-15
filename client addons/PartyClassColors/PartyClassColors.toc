@@ -1,7 +1,0 @@
-## Interface: 30300
-## Title: PartyClassColors
-## Notes: Colors party health bars by class
-## Author: HeavyLogic
-## Version: 1.0.0
-
-PartyClassColors.lua

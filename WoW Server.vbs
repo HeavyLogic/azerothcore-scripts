@@ -11,10 +11,23 @@ cmd = "wt " & _
 
 WshShell.Run cmd, 1, False
 
-' Ждём загрузку
+' Ждём загрузку серверов
 WScript.Sleep 31000
 
-' Запуск клиента
-If fso.FileExists(basePath & "\Wow.lnk") Then
-    WshShell.Run """" & basePath & "\Wow.lnk"""
+' Имя процесса для проверки
+Dim processName
+processName = "wow.exe"
+
+' Проверяем, запущен ли процесс
+Dim objWMIService, colProcesses, isRunning
+Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
+Set colProcesses = objWMIService.ExecQuery("Select * from Win32_Process Where Name = '" & processName & "'")
+
+isRunning = (colProcesses.Count > 0)
+
+' Запуск клиента, если процесс не найден
+If Not isRunning Then
+    If fso.FileExists(basePath & "\Wow.lnk") Then
+        WshShell.Run """" & basePath & "\Wow.lnk"""
+    End If
 End If
